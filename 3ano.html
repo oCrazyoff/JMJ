@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
     <script defer>
-        fetch('../header.html')
+        fetch('header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
             });
     </script>
 </head>
+
 <body>
     <div id="header"></div>
+    <section id="tresano">
+        <h1 class="titulo">3º Ano</h1>
+        <div class="interface">
+            <div class="container">
+                <iframe allow="fullscreen; autoplay;" allowfullscreen width="795" height="690" frameborder="0"
+                    src="https://www.educaplay.com/game/20147946-quiz_de_seguranca_na_internet.html"></iframe>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
