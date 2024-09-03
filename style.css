@@ -1,0 +1,95 @@
+/* geral */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.interface {
+    padding: 1% 5%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.logo img {
+    width: 100px;
+    background-color: white;
+    border-radius: .5em;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #023047;
+    padding: 1%;
+    color: white;
+}
+
+header ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/* turmas */
+#turmas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+#turmas .interface {
+    width: 100%;
+}
+
+#turmas .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ecae6;
+    padding: 1em;
+    gap: 1em;
+    width: 100%;
+    border-radius: 1em;
+}
+
+
+#turmas h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#turmas .container article a {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+    text-decoration: none;
+    background-color: #caf0f8;
+    border-radius: 1em;
+    padding: 1em 2.8em;
+    transition: ease .2s;
+    color: black;
+}
+
+#turmas .container article a:hover {
+    transform: translateY(-10px);
+    background-color: #023047;
+    color: #8ecae6;
+}
