@@ -30,8 +30,8 @@
 }
 
 iframe {
-    min-width: 100%;
-    height: 75vh;
+    width: 45%;
+    height: 55vh;
     border-radius: 1em;
 }
 
@@ -105,4 +105,18 @@ header ul li a {
     transform: translateY(-10px);
     background-color: #023047;
     color: #8ecae6;
+}
+
+/* 3 ano */
+#tresano .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    flex-wrap: wrap;
+}
+
+#tresano .interface{
+    padding: 1% 0;
 }
