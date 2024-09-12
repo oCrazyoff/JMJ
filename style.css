@@ -107,6 +107,34 @@ header ul li a {
     color: #8ecae6;
 }
 
+/* 1 ano */
+#umano .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    flex-wrap: wrap;
+}
+
+#umano .interface {
+    padding: 1% 0;
+}
+
+/* 2 ano */
+#doisano .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    flex-wrap: wrap;
+}
+
+#doisano .interface{
+    padding: 1% 0;
+}
+
 /* 3 ano */
 #tresano .container {
     width: 100%;
@@ -117,6 +145,6 @@ header ul li a {
     flex-wrap: wrap;
 }
 
-#tresano .interface{
+#tresano .interface {
     padding: 1% 0;
 }
