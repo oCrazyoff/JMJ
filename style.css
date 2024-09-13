@@ -111,14 +111,26 @@ header ul li a {
 #umano .container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: .5em;
+    gap: 1em;
     flex-wrap: wrap;
 }
 
 #umano .interface {
     padding: 1% 0;
+}
+
+#umano a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 1em;
+}
+
+#umano a span{
+    font-size: 30px;
 }
 
 /* 2 ano */
