@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -21,22 +21,31 @@
         <h1 class="titulo">3º Ano</h1>
         <div class="interface">
             <div class="container">
-                <iframe allow="fullscreen; autoplay;" allowfullscreen width="795" height="690" frameborder="0"
-                    src="https://www.educaplay.com/game/20248425-memoria_das_partes_do_computador.html"></iframe>
-                <iframe style="max-width:100%"
-                    src="https://wordwall.net/pt/embed/e51e65c024424510a5c9e5f1cccb31ac?themeId=2&templateId=10&fontStackId=0"
+                <iframe id="iframe1" style="max-width:100%"
+                    src="https://wordwall.net/pt/embed/aa80619ffa024494bbea02fb8aa7ec27?themeId=3&templateId=10&fontStackId=0"
                     width="500" height="380" frameborder="0" allowfullscreen></iframe>
-                <iframe style="max-width:100%"
-                    src="https://wordwall.net/pt/embed/d8c4055c0efd43ed839a87763003ac07?themeId=21&templateId=69&fontStackId=0"
+                <iframe id="iframe2" style="max-width:100%"
+                    src="https://wordwall.net/pt/embed/ab621905a55c439fa5674cf346595df6?themeId=2&templateId=25&fontStackId=0"
                     width="500" height="380" frameborder="0" allowfullscreen></iframe>
-                <iframe allow="fullscreen; autoplay;" allowfullscreen width="795" height="690" frameborder="0"
-                    src="https://www.educaplay.com/game/20268821-ferramentas_do_computador.html"></iframe>
-                <iframe style="max-width:100%"
-                    src="https://wordwall.net/pt/embed/ed2f0ee27dac4e90b21eefc664e5aea6?themeId=1&templateId=5&fontStackId=0"
-                    width="500" height="380" frameborder="0" allowfullscreen></iframe>
+                <iframe id="iframe3" allow="fullscreen; autoplay;" allowfullscreen width="795" height="690"
+                    frameborder="0" src="https://www.educaplay.com/game/8362555-seguranca_na_internet.html"></iframe>
             </div>
         </div>
     </section>
+    <script>
+        const iframes = document.querySelectorAll('.iframe');
+
+        iframes.forEach(iframe => {
+            iframe.addEventListener('mouseenter', function () {
+                iframes.forEach(otherIframe => {
+                    if (otherIframe !== this) {
+                        otherIframe.contentWindow.location.reload();
+                    }
+                });
+            });
+        });
+
+    </script>
 </body>
 
 </html>
