@@ -169,3 +169,7 @@ header ul li a {
 #tresano .interface {
     padding: 1% 0;
 }
+
+#tresano iframe{
+    width: 40%;
+}
