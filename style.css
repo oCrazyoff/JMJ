@@ -111,7 +111,7 @@ header ul li a {
 #umano .container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 1em;
     flex-wrap: wrap;
@@ -138,8 +138,8 @@ header ul li a {
 }
 
 #umano iframe{
-    width: 50%;
-    height: 70vh;
+    width: 40%;
+    height: 50vh;
 }
 
 /* 2 ano */
