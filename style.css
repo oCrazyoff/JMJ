@@ -122,7 +122,7 @@ header ul li a {
     padding: 1% 0;
 }
 
-#umano a{
+#umano a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,11 +133,11 @@ header ul li a {
     border-radius: .5em;
 }
 
-#umano a span{
+#umano a span {
     font-size: 30px;
 }
 
-#umano iframe{
+#umano iframe {
     width: 40%;
     height: 50vh;
 }
@@ -152,7 +152,7 @@ header ul li a {
     flex-wrap: wrap;
 }
 
-#doisano .interface{
+#doisano .interface {
     padding: 1% 0;
 }
 
@@ -170,6 +170,6 @@ header ul li a {
     padding: 1% 0;
 }
 
-#tresano iframe{
+#tresano iframe {
     width: 40%;
 }
