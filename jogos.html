@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogos</title>
+    <script defer>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <section id="jogos">
+
+        <div class="interface">
+            <div class="container">
+                <a href="https://poki.com/br" target="_blank">
+                    <img
+                        src="https://yt3.googleusercontent.com/ytc/AIdro_ndXolpdRLbyB54oiEdnxJd5OrK3KhdcZo7QoebhXK2MS4=s900-c-k-c0x00ffffff-no-rj">
+                    <p>Poki</p>
+                </a>
+                <a href="https://www.escolagames.com.br/" target="_blank">
+                    <img
+                        src="https://yt3.googleusercontent.com/ytc/AIdro_ntjeOoPfP4UVNXshhe_fCAgGIaI3Gfb630OdH1=s900-c-k-c0x00ffffff-no-rj">
+                    <p>Escola Games</p>
+                </a>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
