@@ -215,3 +215,13 @@ header ul li a {
     width: 30%;
     height: 15em;
 }
+
+/* 4 ano */
+#quatroano .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    flex-wrap: wrap;
+}
