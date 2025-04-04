@@ -12,6 +12,16 @@
             .then(data => {
                 document.getElementById('header').innerHTML = data;
             });
+
+        function abrirIframe(url) {
+            document.getElementById('iframeContainer').style.display = 'block';
+            document.getElementById('gameIframe').src = url;
+        }
+
+        function fecharIframe() {
+            document.getElementById('iframeContainer').style.display = 'none';
+            document.getElementById('gameIframe').src = '';
+        }
     </script>
     <style>
         #jogos .container {
@@ -42,9 +52,6 @@
         #jogos .container a:hover {
             background-color: #023047;
             color: #8ecae6;
-        }
-
-        #jogos .container a:hover {
             transform: scale(1.05);
         }
 
@@ -56,38 +63,92 @@
             object-position: center;
             border-radius: 1em;
         }
+
+        #iframeContainer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        #gameIframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        #closeButton {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #8ecae6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border: 2px solid #023047;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: .2s ease all;
+        }
+
+        #closeButton:hover {
+            background-color: #4f798d;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
 <body>
     <div id="header"></div>
     <section id="jogos">
-
         <div class="interface">
             <div class="container">
-                <a href="https://www.coquinhos.com/" target="_blank">
+                <a href="#" onclick="abrirIframe('https://www.jogosgratisparacriancas.com/')">
                     <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPQNuzFf7iAW2v151WzuUgSPmjda-3ZBoAfQ&s">
-                    <p>Coquinhos</p>
+                        src="https://lh3.googleusercontent.com/PwQSefSGIuXopk5K6367YL_u0gflu9qnap13oqFUWPCZtoL6n8ZcxmELjr_R_1giNASb=h900">
+                    <p>Joguinhos</p>
                 </a>
-                <a href="https://www.escolagames.com.br/" target="_blank">
+                <a href="#" onclick="abrirIframe('https://www.escolagames.com.br/')">
                     <img src="https://th.bing.com/th/id/OIP.RJF0pmA9MqCdqAESdcfE_AHaHa?rs=1&pid=ImgDetMain">
                     <p>Escola Games</p>
                 </a>
-                <a href="https://www.colorir-online.com/" target="_blank">
+                <a href="#" onclick="abrirIframe('https://kids.poki.com/')">
+                    <img
+                        src="https://static.gameloop.com/img/a17d7b66636f9b8e3ff86df59a505155.png?imageMogr2/thumbnail/172.8x172.8/format/webp">
+                    <p>Poki Kids</p>
+                </a>
+                <a href="#" onclick="abrirIframe('https://www.ludoeducativo.com.br/pt/games')">
+                    <img
+                        src="https://th.bing.com/th/id/R.fa03385ac7c7d26c1ab512ec1d7493b7?rik=wdebNB2bpx4WNA&pid=ImgRaw&r=0">
+                    <p>Ludo Educativo</p>
+                </a>
+                <a href="#" onclick="abrirIframe('https://jogoseducativos.hvirtua.com/')">
+                    <img
+                        src="https://static-cdn.jtvnw.net/jtv_user_pictures/zyrexscythe-profile_image-04345546c01b4557-300x300.jpeg">
+                    <p>HVirtua</p>
+                </a>
+                <a href="#" onclick="abrirIframe('https://www.colorir-online.com/')">
                     <img
                         src="https://img.freepik.com/fotos-premium/criancas-fofas-e-felizes-desenham-arco-iris-e-escrevem-a-palavra-felicidade_250497-35.jpg?semt=ais_hybrid">
                     <p>Colorir</p>
                 </a>
-                <a href="https://www.edclub.com/sportal/program-3.game" target="_blank">
+                <a href="#" onclick="abrirIframe('https://www.edclub.com/sportal/program-3.game')">
                     <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp5nGsCOInHlefpH8Xv6axuBEwaqebRlKOVg&s">
                     <p>Digitação</p>
                 </a>
             </div>
         </div>
-
     </section>
+
+    <div id="iframeContainer">
+        <button id="closeButton" onclick="fecharIframe()"><i class="bi bi-arrow-left-circle"></i> Voltar</button>
+        <iframe id="gameIframe"></iframe>
+    </div>
 </body>
 
 </html>
